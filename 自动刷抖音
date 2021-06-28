@@ -8,7 +8,7 @@ desired_capabilities = {
     'platformVersion': '7.1.2',
     'appPackage': 'com.ss.android.ugc.aweme',
     'appActivity': 'com.ss.android.ugc.aweme.splash.SplashActivity'
-
+driver = webdriver.Remote(server, desired_capabilities) 
 time.sleep(3)
 driver.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView[1]").click()
 time.sleep(3)
